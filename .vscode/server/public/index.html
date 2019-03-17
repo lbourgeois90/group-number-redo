@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lilita+One|PT+Serif|Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+    <h1>Group Guessing Game</h1>
+    
+    <form>
+      <label for=>Player One Guess</label>
+      <input id="player-1" type="text" placeholder="Guess">
+      <label for=>Player Two Guess</label>
+      <input id="player-2"type="text" placeholder="Guess">
+      <label for=>Player Three Guess</label>
+      <input id="player-3"type="text" placeholder="Guess">
+      <button id="submit-button">Submit</button>
+    </form>
+    <div id="roundInfo">
+    
+    </div>
+    <div id="holdsTable">
+    <table>
+      <thead>
+        <tr>
+          <td class="tableHead">Player One</td>
+          <td class="tableHead">Player Two</td>
+          <td class="tableHead">Player Three</td>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- jQuery adds rows to the table -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
